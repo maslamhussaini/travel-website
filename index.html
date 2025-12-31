@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wanderlust Journeys - Extraordinary travel experiences to breathtaking destinations worldwide. Book your dream vacation today.">
+    <title>Wanderlust Journeys | Extraordinary Travel Experiences</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="index.html" class="nav-logo">Wanderlust<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="nav-cta">Book Now</a>
+        <div class="mobile-toggle" id="mobileToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">✦ Award-winning Travel Agency</div>
+            <h1>Discover the <em>World's</em> Hidden Treasures</h1>
+            <p>Embark on extraordinary journeys to breathtaking destinations. Curated experiences that transform the way you see the world.</p>
+            <div class="hero-buttons">
+                <a href="tours.html" class="btn btn-primary">
+                    Explore Tours
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="about.html" class="btn btn-outline">Our Story</a>
+            </div>
+        </div>
+        <div class="hero-scroll">Scroll</div>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <strong>15K+</strong>
+                <span>Happy Travelers</span>
+            </div>
+            <div class="hero-stat">
+                <strong>50+</strong>
+                <span>Destinations</span>
+            </div>
+            <div class="hero-stat">
+                <strong>4.9</strong>
+                <span>Rating</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Categories -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Explore By Category</span>
+                <h2 class="section-title">Find Your Perfect Adventure</h2>
+                <p class="section-subtitle">From serene beaches to thrilling mountains, discover experiences tailored to your travel style</p>
+            </div>
+            <div class="categories-grid">
+                <a href="tours.html?category=beach" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=600&q=80" alt="Beach Escapes">
+                    <div class="category-overlay">
+                        <div class="category-icon">🏝️</div>
+                        <h3 class="category-name">Beach Escapes</h3>
+                        <span class="category-count">24 Tours Available</span>
+                    </div>
+                    <div class="category-arrow">→</div>
+                </a>
+                <a href="tours.html?category=mountain" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" alt="Mountain Expeditions">
+                    <div class="category-overlay">
+                        <div class="category-icon">🏔️</div>
+                        <h3 class="category-name">Mountain Expeditions</h3>
+                        <span class="category-count">18 Tours Available</span>
+                    </div>
+                    <div class="category-arrow">→</div>
+                </a>
+                <a href="tours.html?category=cultural" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&q=80" alt="Cultural Journeys">
+                    <div class="category-overlay">
+                        <div class="category-icon">🏛️</div>
+                        <h3 class="category-name">Cultural Journeys</h3>
+                        <span class="category-count">32 Tours Available</span>
+                    </div>
+                    <div class="category-arrow">→</div>
+                </a>
+                <a href="tours.html?category=safari" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&q=80" alt="Wildlife Safari">
+                    <div class="category-overlay">
+                        <div class="category-icon">🦁</div>
+                        <h3 class="category-name">Wildlife Safari</h3>
+                        <span class="category-count">15 Tours Available</span>
+                    </div>
+                    <div class="category-arrow">→</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tours -->
+    <section class="featured" id="tours">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Featured Packages</span>
+                <h2 class="section-title">Handpicked Tour Packages</h2>
+                <p class="section-subtitle">Our most popular journeys, carefully curated for unforgettable experiences</p>
+            </div>
+            <div class="tours-grid">
+                <article class="tour-card">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80" alt="Bali Paradise">
+                        <span class="tour-badge">Best Seller</span>
+                        <button class="tour-wishlist" aria-label="Add to wishlist">♡</button>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-location">📍 Bali, Indonesia</div>
+                        <h3 class="tour-title">Bali Paradise: Temples, Rice Terraces & Beaches</h3>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item"><span>🕐</span> 7 Days</div>
+                            <div class="tour-meta-item"><span>👥</span> Max 12</div>
+                            <div class="tour-meta-item"><span>⭐</span> 4.9</div>
+                        </div>
+                        <div class="tour-footer">
+                            <div class="tour-price">From <strong>$1,299</strong>/person</div>
+                            <a href="tour-details.html" class="tour-link">View Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tour-card">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=80" alt="Italian Romance">
+                        <span class="tour-badge new">New</span>
+                        <button class="tour-wishlist" aria-label="Add to wishlist">♡</button>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-location">📍 Amalfi Coast, Italy</div>
+                        <h3 class="tour-title">Italian Romance: Amalfi Coast & Capri Island</h3>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item"><span>🕐</span> 10 Days</div>
+                            <div class="tour-meta-item"><span>👥</span> Max 8</div>
+                            <div class="tour-meta-item"><span>⭐</span> 4.8</div>
+                        </div>
+                        <div class="tour-footer">
+                            <div class="tour-price">From <strong>$2,499</strong>/person</div>
+                            <a href="tour-details.html" class="tour-link">View Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tour-card">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=600&q=80" alt="Japanese Wonders">
+                        <span class="tour-badge">Popular</span>
+                        <button class="tour-wishlist" aria-label="Add to wishlist">♡</button>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-location">📍 Kyoto, Japan</div>
+                        <h3 class="tour-title">Japanese Wonders: Ancient Temples & Modern Tokyo</h3>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item"><span>🕐</span> 12 Days</div>
+                            <div class="tour-meta-item"><span>👥</span> Max 10</div>
+                            <div class="tour-meta-item"><span>⭐</span> 4.9</div>
+                        </div>
+                        <div class="tour-footer">
+                            <div class="tour-price">From <strong>$3,199</strong>/person</div>
+                            <a href="tour-details.html" class="tour-link">View Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tour-card">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=600&q=80" alt="Swiss Alps">
+                        <button class="tour-wishlist" aria-label="Add to wishlist">♡</button>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-location">📍 Swiss Alps, Switzerland</div>
+                        <h3 class="tour-title">Alpine Adventure: Swiss Mountains & Lakes</h3>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item"><span>🕐</span> 8 Days</div>
+                            <div class="tour-meta-item"><span>👥</span> Max 15</div>
+                            <div class="tour-meta-item"><span>⭐</span> 4.7</div>
+                        </div>
+                        <div class="tour-footer">
+                            <div class="tour-price">From <strong>$2,899</strong>/person</div>
+                            <a href="tour-details.html" class="tour-link">View Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tour-card">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&q=80" alt="African Safari">
+                        <span class="tour-badge adventure">Adventure</span>
+                        <button class="tour-wishlist" aria-label="Add to wishlist">♡</button>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-location">📍 Serengeti, Tanzania</div>
+                        <h3 class="tour-title">African Safari: Big Five & Maasai Culture</h3>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item"><span>🕐</span> 9 Days</div>
+                            <div class="tour-meta-item"><span>👥</span> Max 6</div>
+                            <div class="tour-meta-item"><span>⭐</span> 5.0</div>
+                        </div>
+                        <div class="tour-footer">
+                            <div class="tour-price">From <strong>$4,599</strong>/person</div>
+                            <a href="tour-details.html" class="tour-link">View Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tour-card">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600&q=80" alt="Greek Islands">
+                        <span class="tour-badge romantic">Romantic</span>
+                        <button class="tour-wishlist" aria-label="Add to wishlist">♡</button>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-location">📍 Santorini, Greece</div>
+                        <h3 class="tour-title">Greek Island Hopping: Santorini & Mykonos</h3>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item"><span>🕐</span> 11 Days</div>
+                            <div class="tour-meta-item"><span>👥</span> Max 14</div>
+                            <div class="tour-meta-item"><span>⭐</span> 4.8</div>
+                        </div>
+                        <div class="tour-footer">
+                            <div class="tour-price">From <strong>$2,199</strong>/person</div>
+                            <a href="tour-details.html" class="tour-link">View Details</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="section-cta">
+                <a href="tours.html" class="btn btn-primary">View All Tours</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us" id="why">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why Wanderlust</span>
+                <h2 class="section-title">The Wanderlust Difference</h2>
+                <p class="section-subtitle">What sets us apart in crafting your dream journey</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">🌟</div>
+                    <h3 class="why-title">Expert Guides</h3>
+                    <p class="why-text">Local experts who bring destinations to life with insider knowledge and authentic experiences</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🎯</div>
+                    <h3 class="why-title">Curated Experiences</h3>
+                    <p class="why-text">Handpicked activities and hidden gems that go beyond typical tourist attractions</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🛡️</div>
+                    <h3 class="why-title">Safe Travels</h3>
+                    <p class="why-text">24/7 support and comprehensive travel insurance for worry-free adventures</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">💎</div>
+                    <h3 class="why-title">Best Value</h3>
+                    <p class="why-text">Premium experiences at competitive prices with transparent pricing—no hidden fees</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Top Destinations</span>
+                <h2 class="section-title">Popular Destinations</h2>
+                <p class="section-subtitle">Trending locations loved by our travelers</p>
+            </div>
+            <div class="dest-grid">
+                <a href="destinations.html" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80" alt="Paris">
+                    <div class="dest-overlay">
+                        <h3 class="dest-name">Paris, France</h3>
+                        <span class="dest-tours">28 Tours</span>
+                    </div>
+                </a>
+                <a href="destinations.html" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8?w=800&q=80" alt="Maldives">
+                    <div class="dest-overlay">
+                        <h3 class="dest-name">Maldives</h3>
+                        <span class="dest-tours">15 Tours</span>
+                    </div>
+                </a>
+                <a href="destinations.html" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80" alt="Dubai">
+                    <div class="dest-overlay">
+                        <h3 class="dest-name">Dubai, UAE</h3>
+                        <span class="dest-tours">22 Tours</span>
+                    </div>
+                </a>
+                <a href="destinations.html" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800&q=80" alt="Sydney">
+                    <div class="dest-overlay">
+                        <h3 class="dest-name">Sydney, Australia</h3>
+                        <span class="dest-tours">19 Tours</span>
+                    </div>
+                </a>
+                <a href="destinations.html" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80" alt="New York">
+                    <div class="dest-overlay">
+                        <h3 class="dest-name">New York, USA</h3>
+                        <span class="dest-tours">35 Tours</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Travelers Say</h2>
+                <p class="section-subtitle">Real stories from our adventurers around the world</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">"Wanderlust turned our honeymoon dreams into reality. The attention to detail, the surprise upgrades, and the personal touches made our trip absolutely magical. We've already booked our next adventure!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Sarah" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>Sarah & James Mitchell</h4>
+                            <p>Bali Honeymoon Package</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">"The African Safari exceeded all expectations. Our guide knew exactly where to find the wildlife, and staying in the luxury tented camps was an experience of a lifetime. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Michael" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>Michael Thompson</h4>
+                            <p>Tanzania Safari Adventure</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">"Japan was always on my bucket list, and Wanderlust made it perfect. From ryokans to robot restaurants, every day was a new adventure. The local guides were incredibly knowledgeable!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Emma" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>Emma Rodriguez</h4>
+                            <p>Japan Discovery Tour</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Start Your Journey?</h2>
+            <p>Let us craft your perfect adventure. Contact our travel experts today and turn your travel dreams into unforgettable memories.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">
+                    Get Free Quote
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="tel:+1234567890" class="btn btn-outline">Call: +1 (234) 567-890</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Get exclusive travel deals, destination guides, and insider tips delivered to your inbox</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">Wanderlust<span>.</span></a>
+                    <p>Creating extraordinary travel experiences since 2010. Your journey to discover the world's wonders starts here.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="tours.html">Our Tours</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-title">Tour Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="tours.html">Beach Holidays</a></li>
+                        <li><a href="tours.html">Adventure Tours</a></li>
+                        <li><a href="tours.html">Cultural Trips</a></li>
+                        <li><a href="tours.html">Wildlife Safari</a></li>
+                        <li><a href="tours.html">Luxury Escapes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>📍 123 Travel Street, NY 10001</li>
+                        <li>📞 +1 (234) 567-890</li>
+                        <li>✉️ hello@wanderlust.com</li>
+                        <li>🕐 Mon-Fri: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Wanderlust Journeys. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Tours | Wanderlust Journeys</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav scrolled" id="nav">
+        <a href="index.html" class="nav-logo">Wanderlust<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html" class="active">Tours</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="nav-cta">Book Now</a>
+        <div class="mobile-toggle" id="mobileToggle">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero" style="background-image: linear-gradient(135deg, rgba(26, 58, 47, 0.9), rgba(13, 31, 24, 0.85)), url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1920&q=80');">
+        <div class="container">
+            <h1>Our Tour Packages</h1>
+            <p>Discover handcrafted journeys to the world's most breathtaking destinations</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Tours</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="tours-filter">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">All Tours</button>
+                    <button class="filter-btn" data-filter="beach">Beach</button>
+                    <button class="filter-btn" data-filter="mountain">Mountain</button>
+                    <button class="filter-btn" data-filter="cultural">Cultural</button>
+                    <button class="filter-btn" data-filter="safari">Safari</button>
+                    <button class="filter-btn" data-filter="luxury">Luxury</button>
+                </div>
+                <div class="filter-group">
+                    <select class="filter-btn" style="padding-right: 2rem;">
+                        <option>Sort by: Popular</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Duration</option>
+                        <option>Rating</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Grid -->
+    <section class="tours-page-section">
+        <div class="container">
+            <div class="tours-page-grid">
+                <!-- Tour 1 -->
+                <article class="tour-card" data-category="beach">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80" alt="Bali Paradise">
+                        <span class="tour-badge">Best Seller</span>
+                        <button class="tour-wishlist">♡</button>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-location">📍 Bali, Indonesia</div>
+                        <h3 class="tour-title">Bali Paradise: Temples, Rice Terraces & Beaches</h3>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item"><span>🕐</span> 7 Days</div>
+                            <div class="tour-meta-item"><span>👥</span> Max 12</div>
+                            <div class="tour-meta-item"><span>⭐</span> 4.9</div>
+                        </div>
+                        <div class="tour-footer">
+                            <div class="tour-price">From <strong>$1,299</strong>/person</div>
+                            <a href="tour-details.html" class="tour-link">View Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tour 2 -->
+                <article class="tour-card" data-category="cultural">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=80" alt="Italian Romance">
+                        <span class="tour-badge new">New</span>
+                        <button class="tour-wishlist">♡</button>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-location">📍 Amalfi Coast, Italy</div>
+                        <h3 class="tour-title">Italian Romance: Amalfi Coast & Capri Island</h3>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item"><span>🕐</span> 10 Days</div>
+                            <div class="tour-meta-item"><span>👥</span> Max 8</div>
+                            <div class="tour-meta-item"><span>⭐</span> 4.8</div>
+                        </div>
+                        <div class="tour-footer">
+                            <div class="tour-price">From <strong>$2,499</strong>/person</div>
+                            <a href="tour-details.html" class="tour-link">View Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tour 3 -->
+                <article class="tour-card" data-category="cultural">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=600&q=80" alt="Japanese Wonders">
+                        <span class="tour-badge">Popular</span>
+                        <button class="tour-wishlist">♡</button>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-location">📍 Kyoto, Japan</div>
+                        <h3 class="tour-title">Japanese Wonders: Ancient Temples & Modern Tokyo</h3>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item"><span>🕐</span> 12 Days</div>
+                            <div class="tour-meta-item"><span>👥</span> Max 10</div>
+                            <div class="tour-meta-item"><span>⭐</span> 4.9</div>
+                        </div>
+                        <div class="tour-footer">
+                            <div class="tour-price">From <strong>$3,199</strong>/person</div>
+                            <a href="tour-details.html" class="tour-link">View Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tour 4 -->
+                <article class="tour-card" data-category="mountain">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=600&q=80" alt="Swiss Alps">
+                        <button class="tour-wishlist">♡</button>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-location">📍 Swiss Alps, Switzerland</div>
+                        <h3 class="tour-title">Alpine Adventure: Swiss Mountains & Lakes</h3>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item"><span>🕐</span> 8 Days</div>
+                            <div class="tour-meta-item"><span>👥</span> Max 15</div>
+                            <div class="tour-meta-item"><span>⭐</span> 4.7</div>
+                        </div>
+                        <div class="tour-footer">
+                            <div class="tour-price">From <strong>$2,899</strong>/person</div>
+                            <a href="tour-details.html" class="tour-link">View Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tour 5 -->
+                <article class="tour-card" data-category="safari">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&q=80" alt="African Safari">
+                        <span class="tour-badge adventure">Adventure</span>
+                        <button class="tour-wishlist">♡</button>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-location">📍 Serengeti, Tanzania</div>
+                        <h3 class="tour-title">African Safari: Big Five & Maasai Culture</h3>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item"><span>🕐</span> 9 Days</div>
+                            <div class="tour-meta-item"><span>👥</span> Max 6</div>
+                            <div class="tour-meta-item"><span>⭐</span> 5.0</div>
+                        </div>
+                        <div class="tour-footer">
+                            <div class="tour-price">From <strong>$4,599</strong>/person</div>
+                            <a href="tour-details.html" class="tour-link">View Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tour 6 -->
+                <article class="tour-card" data-category="beach">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600&q=80" alt="Greek Islands">
+                        <span class="tour-badge romantic">Romantic</span>
+                        <button class="tour-wishlist">♡</button>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-location">📍 Santorini, Greece</div>
+                        <h3 class="tour-title">Greek Island Hopping: Santorini & Mykonos</h3>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item"><span>🕐</span> 11 Days</div>
+                            <div class="tour-meta-item"><span>👥</span> Max 14</div>
+                            <div class="tour-meta-item"><span>⭐</span> 4.8</div>
+                        </div>
+                        <div class="tour-footer">
+                            <div class="tour-price">From <strong>$2,199</strong>/person</div>
+                            <a href="tour-details.html" class="tour-link">View Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tour 7 -->
+                <article class="tour-card" data-category="luxury">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8?w=600&q=80" alt="Maldives">
+                        <span class="tour-badge">Luxury</span>
+                        <button class="tour-wishlist">♡</button>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-location">📍 Maldives</div>
+                        <h3 class="tour-title">Maldives Luxury: Overwater Villas & Spa Retreat</h3>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item"><span>🕐</span> 6 Days</div>
+                            <div class="tour-meta-item"><span>👥</span> Max 4</div>
+                            <div class="tour-meta-item"><span>⭐</span> 5.0</div>
+                        </div>
+                        <div class="tour-footer">
+                            <div class="tour-price">From <strong>$5,999</strong>/person</div>
+                            <a href="tour-details.html" class="tour-link">View Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tour 8 -->
+                <article class="tour-card" data-category="mountain">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" alt="Patagonia">
+                        <span class="tour-badge adventure">Adventure</span>
+                        <button class="tour-wishlist">♡</button>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-location">📍 Patagonia, Chile</div>
+                        <h3 class="tour-title">Patagonia Explorer: Torres del Paine & Glaciers</h3>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item"><span>🕐</span> 10 Days</div>
+                            <div class="tour-meta-item"><span>👥</span> Max 8</div>
+                            <div class="tour-meta-item"><span>⭐</span> 4.9</div>
+                        </div>
+                        <div class="tour-footer">
+                            <div class="tour-price">From <strong>$3,799</strong>/person</div>
+                            <a href="tour-details.html" class="tour-link">View Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tour 9 -->
+                <article class="tour-card" data-category="cultural">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=600&q=80" alt="India">
+                        <span class="tour-badge">Popular</span>
+                        <button class="tour-wishlist">♡</button>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-location">📍 Rajasthan, India</div>
+                        <h3 class="tour-title">Golden Triangle: Delhi, Agra & Jaipur</h3>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item"><span>🕐</span> 9 Days</div>
+                            <div class="tour-meta-item"><span>👥</span> Max 12</div>
+                            <div class="tour-meta-item"><span>⭐</span> 4.7</div>
+                        </div>
+                        <div class="tour-footer">
+                            <div class="tour-price">From <strong>$1,899</strong>/person</div>
+                            <a href="tour-details.html" class="tour-link">View Details</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>Can't Find Your Dream Trip?</h2>
+            <p>Let us create a custom itinerary tailored just for you</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">Wanderlust<span>.</span></a>
+                    <p>Creating extraordinary travel experiences since 2010.</p>
+                    <div class="footer-social">
+                        <a href="#">f</a>
+                        <a href="#">📷</a>
+                        <a href="#">𝕏</a>
+                        <a href="#">▶</a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="tours.html">Our Tours</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-title">Tour Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Beach Holidays</a></li>
+                        <li><a href="#">Adventure Tours</a></li>
+                        <li><a href="#">Cultural Trips</a></li>
+                        <li><a href="#">Wildlife Safari</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li>📍 123 Travel Street, NY</li>
+                        <li>📞 +1 (234) 567-890</li>
+                        <li>✉️ hello@wanderlust.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Wanderlust Journeys. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
